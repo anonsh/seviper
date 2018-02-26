@@ -4,8 +4,8 @@ export PATH
 #=================================================================#
 #   System Required:  CentOS 6+, Debian 7+, Ubuntu 12+            #
 #   Description: One click Install Shadowsocks-Python server      #
-#   Author: Teddysun <@RinghtPrince>                             #
-#   Thanks: @RinghtPrince <https://telegram.me/RinghtPrince>            #
+#   Author: Teddysun <@RinghtPrince>                              #
+#   Thanks: @RinghtPrince <https://telegram.me/RinghtPrince>      #
 #   Intro:  https://teddysun.com/342.html                         #
 #=================================================================#
 
