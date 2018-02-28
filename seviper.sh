@@ -16,10 +16,10 @@ echo " ● Install a set of scripts and system commands for user management." ; 
 echo ""
 tput setaf 3 ; tput bold ; read -n 1 -s -p " Press any key to continue..." ; echo "" ; echo "" ; tput sgr0
 IP=$(wget -qO- ipv4.icanhazip.com)
-read -p "To continue confirm the IP address of this server: " -e -i $IP ipdovps
+read -p "Para continuar confirme la IP de este servidor: " -e -i $IP ipdovps
 if [ -z "$ipdovps" ]
 then
-	tput setaf 7 ; tput setab 1 ; tput bold ; echo "" ; echo "" ; echo " You have not entered the IP address of this server. Try it again. " ; echo "" ; echo "" ; tput sgr0
+	tput setaf 7 ; tput setab 1 ; tput bold ; echo "" ; echo "" ; echo " No ha introducido la dirección IP de este servidor. Inténtalo de nuevo. " ; echo "" ; echo "" ; tput sgr0
 	exit 1
 fi
 if [ -f "/root/usuarios.db" ]
@@ -63,31 +63,31 @@ then
 	echo "Port 443" >> /etc/ssh/sshd_config
 	grep -v "^PasswordAuthentication yes" /etc/ssh/sshd_config > /tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
 	echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/addhost.sh -O /bin/addhost
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/addhost.sh -O /bin/addhost
 	chmod +x /bin/addhost
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/alterarcontrase�a.sh -O /bin/alterarcontrase�a
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/alterarcontrase�a.sh -O /bin/alterarcontrase�a
 	chmod +x /bin/alterarcontrase�a
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/socks.sh -O /bin/socked
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/socks.sh -O /bin/socked
 	chmod +x /bin/socked
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/shadowsocks.sh -O /bin/shadowsocks
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/shadowsocks.sh -O /bin/shadowsocks
 	chmod +x /bin/shadowsocks
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/crearusuario2.sh -O /bin/crearusuario
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/crearusuario2.sh -O /bin/crearusuario
 	chmod +x /bin/crearusuario
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/delhost.sh -O /bin/delhost
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/delhost.sh -O /bin/delhost
 	chmod +x /bin/delhost
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/expcleaner2.sh -O /bin/expcleaner
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/expcleaner2.sh -O /bin/expcleaner
 	chmod +x /bin/expcleaner
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/mudardata.sh -O /bin/mudardata
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/mudardata.sh -O /bin/mudardata
 	chmod +x /bin/mudardata
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/remover.sh -O /bin/remover
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/remover.sh -O /bin/remover
 	chmod +x /bin/remover
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/sshlimiter2.sh -O /bin/sshlimiter
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/sshlimiter2.sh -O /bin/sshlimiter
 	chmod +x /bin/sshlimiter
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/alterarlimite.sh -O /bin/alterarlimite
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/alterarlimite.sh -O /bin/alterarlimite
 	chmod +x /bin/alterarlimite
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/ayuda.sh -O /bin/ayuda
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/ayuda.sh -O /bin/ayuda
 	chmod +x /bin/ayuda
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/sshmonitor2.sh -O /bin/sshmonitor
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/sshmonitor2.sh -O /bin/sshmonitor
 	chmod +x /bin/sshmonitor
 	if [ ! -f "/etc/init.d/squid3" ]
 	then
@@ -114,27 +114,27 @@ then
 	echo "Port 443" >> /etc/ssh/sshd_config
 	grep -v "^PasswordAuthentication yes" /etc/ssh/sshd_config > /tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
 	echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/addhost.sh -O /bin/addhost
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/2/addhost.sh -O /bin/addhost
 	chmod +x /bin/addhost
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/alterarcontraseña.sh -O /bin/alterarcontrase�a
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/alterarcontraseña.sh -O /bin/alterarcontrase�a
 	chmod +x /bin/alterarcontrase�a
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/crearusuario2.sh -O /bin/crearusuario
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/crearusuario2.sh -O /bin/crearusuario
 	chmod +x /bin/crearusuario
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/delhost.sh -O /bin/delhost
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/2/delhost.sh -O /bin/delhost
 	chmod +x /bin/delhost
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/expcleaner2.sh -O /bin/expcleaner
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/expcleaner2.sh -O /bin/expcleaner
 	chmod +x /bin/expcleaner
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/mudardata.sh -O /bin/mudardata
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/mudardata.sh -O /bin/mudardata
 	chmod +x /bin/mudardata
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/remover.sh -O /bin/remover
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/remover.sh -O /bin/remover
 	chmod +x /bin/remover
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/sshlimiter2.sh -O /bin/sshlimiter
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/sshlimiter2.sh -O /bin/sshlimiter
 	chmod +x /bin/sshlimiter
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/alterarlimite.sh -O /bin/alterarlimite
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/alterarlimite.sh -O /bin/alterarlimite
 	chmod +x /bin/alterarlimite
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/ayuda.sh -O /bin/ayuda
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/ayuda.sh -O /bin/ayuda
 	chmod +x /bin/ayuda
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/sshmonitor2.sh -O /bin/sshmonitor
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/sshmonitor2.sh -O /bin/sshmonitor
 	chmod +x /bin/sshmonitor
 	if [ ! -f "/etc/init.d/squid" ]
 	then

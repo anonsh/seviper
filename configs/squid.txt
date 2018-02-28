@@ -7,13 +7,13 @@ http_access allow url3
 http_access allow payload
 
 http_access allow all
- 
+
 http_port 80
 http_port 3128
 http_port 8080
 http_port 8799
 
-visible_hostname Seviper
- 
+visible_hostname seviper
+
 forwarded_for off
 via off
