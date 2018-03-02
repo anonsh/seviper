@@ -65,8 +65,8 @@ then
 	echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/addhost.sh -O /bin/addhost
 	chmod +x /bin/addhost
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/alterarcontrase�a.sh -O /bin/alterarcontrase�a
-	chmod +x /bin/alterarcontrase�a
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/alterarcontrasena.sh -O /bin/alterarcontrasena
+	chmod +x /bin/alterarcontrasena
 	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/socks.sh -O /bin/socked
 	chmod +x /bin/socked
 	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/shadowsocks.sh -O /bin/shadowsocks
@@ -116,8 +116,8 @@ then
 	echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/2/addhost.sh -O /bin/addhost
 	chmod +x /bin/addhost
-	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/alterarcontraseña.sh -O /bin/alterarcontrase�a
-	chmod +x /bin/alterarcontrase�a
+	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/alterarcontrasena.sh -O /bin/alterarcontrasena
+	chmod +x /bin/alterarcontrasena
 	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/1/crearusuario2.sh -O /bin/crearusuario
 	chmod +x /bin/crearusuario
 	wget https://raw.githubusercontent.com/anonsh/seviper/master/scripts/2/delhost.sh -O /bin/delhost

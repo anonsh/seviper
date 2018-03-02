@@ -2,7 +2,7 @@
 tput setaf 7 ; tput setab 4 ; tput bold ; printf '%35s%s%-10s\n' "Alterar contraseña de Usuário" ; tput sgr0
 tput bold ; echo "" ; echo "Lista de usuários:" ; echo "" ; tput sgr0
 tput setaf 3 ; tput bold ; awk -F : '$3 >= 500 { print $1 }' /etc/passwd | grep -v '^nobody' ; echo "" ; tput sgr0
-read -p "Nome do usuário para alterar a senha: " user
+read -p "Escribe el nombre de usuario para cambiar la contraseña: " user
 if [[ -z $user ]]
 then
 	tput setaf 7 ; tput setab 4 ; tput bold ; echo "" ; echo "Ha introducido un nombre de usuario vacío o no válido!" ; echo "" ; tput sgr0
